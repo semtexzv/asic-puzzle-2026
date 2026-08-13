@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+
+# Generated simulation binaries and large transient artifacts.
+build/*.vvp
+build/*.vcd
+build/*.pkl
+build/*.png
+build/*.gds
+build/*.mem
+build/region_valid_grids.json
+

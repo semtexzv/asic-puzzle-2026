@@ -26,3 +26,24 @@ You'll find the following files related to the warm-up puzzle:
   connections, corresponding to cell and net names.
 - `warmup/04_final.gds`: The final manufacturable layout file, with many internal names
   removed
+
+## Reverse-engineering work
+
+This fork contains the scripts and intermediate results from my solution:
+
+- `pipeline/` extracts connectivity, identifies cells from geometry, emits Verilog,
+  recovers state-machine structure, and builds the formal model.
+- `build/` contains selected netlists, solver inputs, witnesses, region maps, and
+  verification testbenches. Large generated simulations are intentionally ignored.
+- `star-chip.html` is an earlier standalone rendering of the investigation.
+
+The sky130 HD standard-cell repository is included as a submodule. After cloning,
+initialize it with:
+
+```sh
+git submodule update --init
+```
+
+The Python tools require KLayout's Python module and Z3. The verification steps also
+use Icarus Verilog, Yosys, and ABC. `pipeline/run.sh` runs the extraction and the main
+cross-checks after those dependencies are installed in `.venv`.

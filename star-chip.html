@@ -1,0 +1,315 @@
+<title>(* TWO STARS *) — a Star Battle recovered from silicon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    color-scheme: dark;
+    --space:#0a0d18; --space2:#070a12;
+    --plate:#111726; --plate2:#0d1220; --inset:#0b1019;
+    --ink:#eef1fa; --muted:#8a93ac; --faint:#5b657f;
+    --line:#232d46; --line2:#2f3a58;
+    --star:#ffd75e; --star-2:#ffe9a6; --star-dim:#c9a84a;
+    --signal:#56d3e0; --bad:#e8776a; --good:#7fdca0;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,"Cascadia Code",Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--space); color:var(--ink);
+    font-family:var(--sans); font-size:17px; line-height:1.65;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  #sky{position:fixed; inset:0; z-index:0; display:block}
+  .wrap{position:relative; z-index:1; max-width:920px; margin:0 auto; padding:0 24px}
+  a{color:var(--signal); text-decoration:none; border-bottom:1px solid color-mix(in srgb,var(--signal) 35%, transparent)}
+  a:hover{border-bottom-color:var(--signal)}
+  ::selection{background:color-mix(in srgb,var(--star) 30%, transparent); color:var(--star-2)}
+
+  .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--signal); display:flex; gap:.7em; align-items:center}
+  .eyebrow::before{content:""; width:26px; height:1px; background:var(--signal); opacity:.6}
+
+  header{padding:19vh 0 8vh}
+  h1{font-family:var(--serif); font-weight:600; font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.02;
+    letter-spacing:-.01em; margin:.5em 0 .3em; text-wrap:balance}
+  h1 .win{color:var(--star); font-style:italic}
+  .lede{font-size:clamp(1.05rem,2.4vw,1.28rem); color:#c3cadd; max-width:60ch; margin:0}
+  .lede b{color:var(--ink); font-weight:600}
+  .paren{font-family:var(--mono); color:var(--star-dim)}
+
+  section{padding:6vh 0; border-top:1px solid var(--line)}
+  .kicker{font-family:var(--mono); font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--faint); margin:0 0 .8em}
+  h2{font-family:var(--serif); font-weight:600; font-size:clamp(1.7rem,4vw,2.3rem); line-height:1.1; margin:0 0 .5em; text-wrap:balance}
+  p{max-width:65ch}
+  .muted{color:var(--muted)}
+
+  /* chart */
+  .chart-shell{display:flex; flex-direction:column; align-items:center; gap:22px}
+  .chartbox{position:relative; padding:22px; border-radius:14px;
+    background:linear-gradient(180deg,var(--plate),var(--plate2));
+    border:1px solid var(--line2);
+    box-shadow:0 30px 80px -40px #000, inset 0 1px 0 #ffffff0e;}
+  svg.grid{display:block; width:min(78vw,484px); height:auto}
+  .cellfill{transition:opacity .5s ease}
+  .rline{stroke:var(--line); stroke-width:1}
+  .coord{font-family:var(--mono); font-size:10px; fill:var(--faint); letter-spacing:.05em}
+  .star{opacity:0; transition:opacity .5s ease}
+  .star-core{fill:var(--star)}
+
+  .toggle{display:inline-flex; padding:4px; gap:4px; border-radius:999px;
+    background:var(--inset); border:1px solid var(--line2)}
+  .toggle button{appearance:none; border:0; cursor:pointer; font-family:var(--mono);
+    font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted);
+    background:transparent; padding:9px 18px; border-radius:999px; transition:.25s}
+  .toggle button[aria-pressed="true"]{background:color-mix(in srgb,var(--star) 16%, transparent); color:var(--star-2)}
+  .toggle button:focus-visible{outline:2px solid var(--signal); outline-offset:2px}
+  .caption{font-family:var(--mono); font-size:12.5px; color:var(--faint); letter-spacing:.04em; text-align:center}
+
+  /* rules grid */
+  .rules{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-top:26px}
+  .rule{background:var(--plate2); border:1px solid var(--line); border-radius:12px; padding:18px 20px}
+  .rule .n{font-family:var(--mono); font-size:12px; color:var(--star-dim); letter-spacing:.1em}
+  .rule h3{font-family:var(--serif); font-weight:600; font-size:1.15rem; margin:.3em 0 .2em}
+  .rule p{font-size:.92rem; color:var(--muted); margin:0}
+
+  /* messages */
+  .msgs{display:flex; flex-direction:column; gap:2px; margin-top:24px;
+    border:1px solid var(--line); border-radius:14px; overflow:hidden}
+  .msg{display:grid; grid-template-columns:minmax(150px,220px) 1fr; gap:20px; align-items:center;
+    padding:18px 22px; background:var(--plate2)}
+  .msg .name{font-family:var(--mono); font-size:1.02rem; letter-spacing:.04em; color:var(--muted)}
+  .msg .trig{font-size:.95rem; color:var(--muted)}
+  .msg.win{background:linear-gradient(90deg,color-mix(in srgb,var(--star) 12%, var(--plate2)),var(--plate2))}
+  .msg.win .name{color:var(--star); text-shadow:0 0 22px color-mix(in srgb,var(--star) 55%, transparent)}
+  .msg.win .trig{color:#dbe0ee}
+  .msg .name .dim{color:var(--faint)}
+
+  /* the answer */
+  .bits{font-family:var(--mono); font-size:clamp(11px,2.7vw,15px); line-height:1.9; letter-spacing:.18em;
+    background:var(--inset); border:1px solid var(--line2); border-radius:12px; padding:20px;
+    color:var(--faint); overflow-x:auto; white-space:pre; margin-top:8px}
+  .bits b{color:var(--star); font-weight:700}
+
+  .stat-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:26px}
+  .stat{flex:1 1 130px; background:var(--plate2); border:1px solid var(--line); border-radius:12px; padding:16px 18px}
+  .stat .v{font-family:var(--mono); font-size:1.5rem; color:var(--ink); font-variant-numeric:tabular-nums}
+  .stat .v .u{font-size:.75rem; color:var(--faint)}
+  .stat .k{font-size:.8rem; color:var(--muted); margin-top:2px}
+
+  .pipe{list-style:none; padding:0; margin:22px 0 0; counter-reset:s}
+  .pipe li{position:relative; padding:0 0 18px 40px; counter-increment:s}
+  .pipe li::before{content:counter(s,decimal-leading-zero); position:absolute; left:0; top:1px;
+    font-family:var(--mono); font-size:12px; color:var(--star-dim); letter-spacing:.05em}
+  .pipe li:not(:last-child)::after{content:""; position:absolute; left:9px; top:22px; bottom:0; width:1px; background:var(--line2)}
+  .pipe b{color:var(--ink); font-weight:600}
+  .pipe span{color:var(--muted)}
+  .pipe .ok{color:var(--good); font-family:var(--mono); font-size:.82em}
+
+  footer{border-top:1px solid var(--line); padding:5vh 0 8vh; color:var(--faint); font-family:var(--mono); font-size:12.5px; letter-spacing:.03em}
+  footer .paren{color:var(--star-dim)}
+
+  @media (max-width:560px){
+    .msg{grid-template-columns:1fr; gap:6px}
+    .msg .name{font-size:.95rem}
+  }
+  @media (prefers-reduced-motion:reduce){ *{animation:none !important; transition:none !important} }
+</style>
+
+<canvas id="sky" aria-hidden="true"></canvas>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">ASIC reverse-engineering · Jane Street 2026</div>
+    <h1>A star chart etched<br>into <span class="win">silicon</span>.</h1>
+    <p class="lede"><b>puzzle.gds</b> shipped as bare mask polygons — no source, no netlist, no hint of what it computed. Recovered gate by gate, it turned out to be a hardware validator for an <b>11&times;11 Star Battle</b>. Here is the sky it was hiding — and the one arrangement of stars that makes it answer <span class="paren">(* TWO STARS *)</span>.</p>
+  </header>
+
+  <section>
+    <div class="chart-shell">
+      <div class="toggle" role="group" aria-label="Chart view">
+        <button id="btnPuzzle" aria-pressed="false">The puzzle</button>
+        <button id="btnSolution" aria-pressed="true">The solution</button>
+      </div>
+      <div class="chartbox"><svg id="grid" class="grid" viewBox="0 0 528 528" role="img"
+        aria-label="11 by 11 Star Battle grid with 11 irregular regions and its solution stars"></svg></div>
+      <div class="caption" id="cap">two stars per row · column · region — none touching, even diagonally</div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">The rules the gates enforce</p>
+    <h2>Star Battle, in hardware</h2>
+    <p class="muted">Also called <em>Two Not Touch</em>. The chip streams the grid in one bit at a time and checks four things at once — the win signal fires only when all four hold.</p>
+    <div class="rules">
+      <div class="rule"><div class="n">A</div><h3>Two per row</h3><p>Exactly two stars in each of the 11 rows.</p></div>
+      <div class="rule"><div class="n">B</div><h3>Two per column</h3><p>Exactly two stars in each of the 11 columns.</p></div>
+      <div class="rule"><div class="n">C</div><h3>Two per region</h3><p>Exactly two in each of the 11 irregular regions — the boundaries above.</p></div>
+      <div class="rule"><div class="n">D</div><h3>No touching</h3><p>No two stars adjacent, orthogonally or diagonally.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">What the chip says back</p>
+    <h2>Five messages, all sky</h2>
+    <p class="muted">The output port spells a message one byte at a time. The whole vocabulary — recovered exhaustively — is astronomy, bracketing the real puzzle between nothing and everything.</p>
+    <div class="msgs" id="msgs"></div>
+  </section>
+
+  <section>
+    <p class="kicker">The answer</p>
+    <h2>121 bits, read as a sky</h2>
+    <p class="muted">Fed serially, one bit per clock. The input isn't text — it's the grid itself, row by row. Ones are stars; the solution is unique down to the last two padding bits.</p>
+    <div class="bits" id="bits"></div>
+    <div class="stat-row">
+      <div class="stat"><div class="v">11&times;11</div><div class="k">grid, = 121 input bits</div></div>
+      <div class="stat"><div class="v">22 <span class="u">★</span></div><div class="k">stars placed</div></div>
+      <div class="stat"><div class="v">121 <span class="u">/123</span></div><div class="k">bits forced — unique</div></div>
+      <div class="stat"><div class="v">cycle 123</div><div class="k"><span style="color:var(--star)">success</span> asserts</div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">From polygons to a solved puzzle</p>
+    <h2>How the sky was recovered</h2>
+    <ul class="pipe">
+      <li><b>Extract the netlist.</b> <span>KLayout traced the metal layers of <span style="font-family:var(--mono);font-size:.85em">puzzle.gds</span> back into 728 standard cells and their wiring.</span> <span class="ok">✓ matches the chip's I/O byte-for-byte</span></li>
+      <li><b>Read the architecture.</b> <span>92 flip-flops, a serial-load state machine, one win comparator, and a message-ROM output stage.</span></li>
+      <li><b>Solve for the input.</b> <span>yosys + ABC found a trace to <span style="color:var(--star)">success</span>; z3 proved it unique.</span> <span class="ok">✓ verified in simulation</span></li>
+      <li><b>Recover the regions.</b> <span>The region counters are linear parity flops — probing them with single stars handed back all 11 regions.</span> <span class="ok">✓ solution has 2 stars in every one</span></li>
+      <li><b>Close the loop.</b> <span>An independent solver, given only the recovered regions, returns the same grid — uniquely.</span> <span class="ok">✓ region map == chip's, both directions</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    recovered from <span style="color:var(--muted)">puzzle.gds</span> — mask geometry only, no source ·
+    every claim checked against the silicon · <span class="paren">(* TWO STARS *)</span>
+  </footer>
+</div>
+
+<script>
+const REGION=[2,2,2,2,2,1,1,7,9,9,0,2,2,6,2,2,1,7,7,9,9,0,2,2,6,1,1,1,1,7,7,9,0,2,2,6,1,3,3,3,0,7,7,0,6,2,6,1,3,0,0,0,0,0,0,6,6,6,1,3,3,3,0,4,4,4,1,1,1,1,1,1,3,0,4,8,8,1,5,5,5,3,3,3,0,4,8,8,1,5,5,10,0,0,0,0,4,8,8,1,1,5,10,10,0,0,0,4,4,4,1,5,5,10,0,0,0,0,0,0,0];
+const SOL=[0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0];
+const N=11, CS=44, PAD=42, W=PAD+N*CS+2;
+const at=(r,c)=> (r>=0&&r<N&&c>=0&&c<N)? REGION[r*N+c] : -2;
+const NS="http://www.w3.org/2000/svg";
+function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+
+const svg=document.getElementById('grid');
+svg.setAttribute('viewBox',`0 0 ${W} ${W}`);
+// region tints — low saturation, hue spread; index 0..10
+const tint=k=>`hsl(${(k*33+205)%360} 30% 16%)`;
+const cells=[];
+for(let r=0;r<N;r++)for(let c=0;c<N;c++){
+  const x=PAD+c*CS, y=PAD+r*CS;
+  const f=el('rect',{x,y,width:CS,height:CS,fill:tint(REGION[r*N+c]),opacity:.9,class:'cellfill'});
+  svg.appendChild(f); cells.push(f);
+}
+// faint inner grid
+for(let i=0;i<=N;i++){
+  svg.appendChild(el('line',{x1:PAD+i*CS,y1:PAD,x2:PAD+i*CS,y2:PAD+N*CS,class:'rline',opacity:.5}));
+  svg.appendChild(el('line',{x1:PAD,y1:PAD+i*CS,x2:PAD+N*CS,y2:PAD+i*CS,class:'rline',opacity:.5}));
+}
+// region borders (brighter, thicker where regions differ + outer frame)
+function border(x1,y1,x2,y2){svg.appendChild(el('line',{x1,y1,x2,y2,stroke:'#93a0c4',"stroke-width":2,"stroke-linecap":"round",opacity:.85}));}
+for(let r=0;r<N;r++)for(let c=0;c<N;c++){
+  const x=PAD+c*CS,y=PAD+r*CS,k=at(r,c);
+  if(at(r,c-1)!==k) border(x,y,x,y+CS);
+  if(at(r,c+1)!==k) border(x+CS,y,x+CS,y+CS);
+  if(at(r-1,c)!==k) border(x,y,x+CS,y);
+  if(at(r+1,c)!==k) border(x,y+CS,x+CS,y+CS);
+}
+// coordinate ticks (RA/Dec vibe)
+const L="ABCDEFGHIJK";
+for(let i=0;i<N;i++){
+  svg.appendChild(el('text',{x:PAD+i*CS+CS/2,y:PAD-14,"text-anchor":"middle",class:'coord'})).textContent=L[i];
+  const t=el('text',{x:PAD-16,y:PAD+i*CS+CS/2+4,"text-anchor":"middle",class:'coord'});t.textContent=(i+1);svg.appendChild(t);
+}
+// stars
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const starEls=[];
+for(let r=0;r<N;r++)for(let c=0;c<N;c++){
+  if(!SOL[r*N+c])continue;
+  const cx=PAD+c*CS+CS/2, cy=PAD+r*CS+CS/2;
+  const g=el('g',{transform:`translate(${cx} ${cy})`,class:'star'});
+  g.appendChild(el('circle',{r:15,fill:'url(#glow)'}));
+  // 4-point sparkle
+  const rr=9.5;
+  g.appendChild(el('path',{d:`M0 ${-rr} L2 -2 L${rr} 0 L2 2 L0 ${rr} L-2 2 L${-rr} 0 L-2 -2 Z`,class:'star-core'}));
+  g.appendChild(el('circle',{r:2.4,fill:'#fff'}));
+  svg.appendChild(g); starEls.push(g);
+}
+// glow gradient
+const defs=el('defs',{});
+const rg=el('radialGradient',{id:'glow'});
+rg.appendChild(el('stop',{offset:'0%','stop-color':'#ffe9a6','stop-opacity':'.95'}));
+rg.appendChild(el('stop',{offset:'40%','stop-color':'#ffd75e','stop-opacity':'.35'}));
+rg.appendChild(el('stop',{offset:'100%','stop-color':'#ffd75e','stop-opacity':'0'}));
+defs.appendChild(rg); svg.insertBefore(defs,svg.firstChild);
+
+// ignite: stagger the stars in like a long exposure
+let shown=true;
+function setStars(on){
+  shown=on;
+  starEls.forEach((g,i)=>{
+    const d= (on && !reduce) ? i*55 : 0;
+    setTimeout(()=>{ g.style.opacity = on?1:0; }, d);
+  });
+}
+setStars(true);
+
+// toggle
+const bp=document.getElementById('btnPuzzle'), bs=document.getElementById('btnSolution'), cap=document.getElementById('cap');
+function show(sol){
+  bp.setAttribute('aria-pressed',String(!sol)); bs.setAttribute('aria-pressed',String(sol));
+  setStars(sol);
+  cap.textContent=sol? 'two stars per row · column · region — none touching, even diagonally'
+                     : '11 regions to fill — the givens the chip checks against';
+}
+bp.onclick=()=>show(false); bs.onclick=()=>show(true);
+
+// messages
+const MSG=[
+  ['EMPTY SKY','an empty grid — no stars at all',false],
+  ['TRY AGAIN','any arrangement that breaks the counts',false],
+  ['TWO NOT TOUCH','right counts everywhere, but two stars touch',false],
+  ['(* TWO STARS *)','the one valid solution — <b style="color:var(--good)">success</b> goes high',true],
+  ['BIG BANG','the whole grid full — every one of the 121 cells a star',false],
+];
+document.getElementById('msgs').innerHTML=MSG.map(m=>
+  `<div class="msg${m[2]?' win':''}"><div class="name">${m[0]}</div><div class="trig">${m[1]}</div></div>`).join('');
+
+// bits, laid out as the 11x11 grid it represents
+const BITS="0000000101010000100000000000010101010000000000001010000001000001000000100000101000010000000100000010000010010001010000000";
+let out='';
+for(let r=0;r<N;r++){
+  let row='';
+  for(let c=0;c<N;c++){const b=BITS[r*N+c]; row+= b==='1'?`<b>1</b>`:'0'; row+= c<N-1?' ':'';}
+  out+=row+'\n';
+}
+document.getElementById('bits').innerHTML=out.trimEnd();
+
+// ambient starfield
+const cv=document.getElementById('sky'), ctx=cv.getContext('2d');
+let stars=[], DPR=Math.min(devicePixelRatio||1,2);
+function resize(){cv.width=innerWidth*DPR;cv.height=innerHeight*DPR;cv.style.width=innerWidth+'px';cv.style.height=innerHeight+'px';
+  const n=Math.round(innerWidth*innerHeight/9000); stars=[];
+  for(let i=0;i<n;i++)stars.push({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.1*DPR+.2*DPR,
+    a:Math.random()*.5+.15,t:Math.random()*6.28,s:Math.random()*.6+.2});
+}
+resize(); addEventListener('resize',resize);
+function draw(tm){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  const g=ctx.createLinearGradient(0,0,0,cv.height);
+  g.addColorStop(0,'#0b0f1c'); g.addColorStop(1,'#070a12');
+  ctx.fillStyle=g; ctx.fillRect(0,0,cv.width,cv.height);
+  for(const s of stars){
+    const tw=reduce?1:(.6+.4*Math.sin(tm/1400*s.s+s.t));
+    ctx.globalAlpha=s.a*tw; ctx.fillStyle= Math.random()<.001?'#ffd75e':'#cfd8f0';
+    ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,6.28); ctx.fill();
+  }
+  ctx.globalAlpha=1;
+  if(!reduce) requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+</script>

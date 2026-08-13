@@ -1,0 +1,3379 @@
+{
+ "top": "adder_demo",
+ "dbu": 0.001,
+ "instances": [
+  {
+   "name": "i0",
+   "cell": "sky130_fd_sc_hd__and3_2",
+   "x": 69.92,
+   "y": 54.4,
+   "llx": 69.92,
+   "lly": 51.68,
+   "orient": "M0",
+   "pins": {
+    "C": 64,
+    "X": 77,
+    "VPWR": 2,
+    "VGND": 1,
+    "A": 55,
+    "B": 16
+   }
+  },
+  {
+   "name": "i1",
+   "cell": "sky130_fd_sc_hd__and4bb_2",
+   "x": 69.92,
+   "y": 48.96,
+   "llx": 69.92,
+   "lly": 48.96,
+   "orient": "R0",
+   "pins": {
+    "X": 76,
+    "VGND": 1,
+    "VPWR": 2,
+    "A_N": 51,
+    "C": 33,
+    "D": 70,
+    "B_N": 65
+   }
+  },
+  {
+   "name": "i2",
+   "cell": "sky130_fd_sc_hd__and4bb_2",
+   "x": 74.52,
+   "y": 48.96,
+   "llx": 69.92,
+   "lly": 46.24,
+   "orient": "R180",
+   "pins": {
+    "X": 8,
+    "VGND": 1,
+    "VPWR": 2,
+    "A_N": 48,
+    "C": 77,
+    "D": 76,
+    "B_N": 73
+   }
+  },
+  {
+   "name": "i3",
+   "cell": "sky130_fd_sc_hd__clkbuf_16",
+   "x": 35.88,
+   "y": 65.28,
+   "llx": 26.68,
+   "lly": 62.56,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "X": 80,
+    "VGND": 1,
+    "A": 75
+   }
+  },
+  {
+   "name": "i4",
+   "cell": "sky130_fd_sc_hd__clkbuf_16",
+   "x": 31.74,
+   "y": 48.96,
+   "llx": 31.74,
+   "lly": 48.96,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "X": 75,
+    "VGND": 1,
+    "A": 78
+   }
+  },
+  {
+   "name": "i5",
+   "cell": "sky130_fd_sc_hd__nand2_2",
+   "x": 79.12,
+   "y": 27.2,
+   "llx": 79.12,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 29,
+    "B": 67,
+    "A": 10
+   }
+  },
+  {
+   "name": "i6",
+   "cell": "sky130_fd_sc_hd__nand2_2",
+   "x": 61.64,
+   "y": 27.2,
+   "llx": 59.34,
+   "lly": 24.48,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 35,
+    "B": 44,
+    "A": 37
+   }
+  },
+  {
+   "name": "i7",
+   "cell": "sky130_fd_sc_hd__nand2_2",
+   "x": 80.96,
+   "y": 27.2,
+   "llx": 80.96,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 39,
+    "B": 4,
+    "A": 49
+   }
+  },
+  {
+   "name": "i8",
+   "cell": "sky130_fd_sc_hd__xnor2_2",
+   "x": 69.92,
+   "y": 27.2,
+   "llx": 69.92,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "Y": 48,
+    "VPWR": 2,
+    "VGND": 1,
+    "B": 40,
+    "A": 39
+   }
+  },
+  {
+   "name": "i9",
+   "cell": "sky130_fd_sc_hd__xnor2_2",
+   "x": 62.56,
+   "y": 27.2,
+   "llx": 62.56,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "Y": 55,
+    "VPWR": 2,
+    "VGND": 1,
+    "B": 38,
+    "A": 35
+   }
+  },
+  {
+   "name": "i10",
+   "cell": "sky130_fd_sc_hd__a21boi_2",
+   "x": 69.92,
+   "y": 27.2,
+   "llx": 65.78,
+   "lly": 24.48,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 14,
+    "A2": 38,
+    "B1_N": 37,
+    "A1": 44
+   }
+  },
+  {
+   "name": "i11",
+   "cell": "sky130_fd_sc_hd__xor2_2",
+   "x": 69.92,
+   "y": 32.64,
+   "llx": 69.92,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "A": 20,
+    "X": 65,
+    "VPWR": 2,
+    "B": 19
+   }
+  },
+  {
+   "name": "i12",
+   "cell": "sky130_fd_sc_hd__xor2_2",
+   "x": 74.98,
+   "y": 27.2,
+   "llx": 74.98,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "A": 24,
+    "X": 51,
+    "VPWR": 2,
+    "B": 52
+   }
+  },
+  {
+   "name": "i13",
+   "cell": "sky130_fd_sc_hd__xor2_2",
+   "x": 68.54,
+   "y": 27.2,
+   "llx": 68.54,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "A": 62,
+    "X": 40,
+    "VPWR": 2,
+    "B": 54
+   }
+  },
+  {
+   "name": "i14",
+   "cell": "sky130_fd_sc_hd__xor2_2",
+   "x": 68.54,
+   "y": 32.64,
+   "llx": 68.54,
+   "lly": 32.64,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "A": 63,
+    "X": 70,
+    "VPWR": 2,
+    "B": 69
+   }
+  },
+  {
+   "name": "i15",
+   "cell": "sky130_fd_sc_hd__a31o_2",
+   "x": 75.9,
+   "y": 32.64,
+   "llx": 75.9,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "A3": 32,
+    "A2": 67,
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 25,
+    "A1": 10,
+    "B1": 66
+   }
+  },
+  {
+   "name": "i16",
+   "cell": "sky130_fd_sc_hd__a31o_2",
+   "x": 75.9,
+   "y": 27.2,
+   "llx": 75.9,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "A3": 40,
+    "A2": 4,
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 20,
+    "A1": 49,
+    "B1": 45
+   }
+  },
+  {
+   "name": "i17",
+   "cell": "sky130_fd_sc_hd__a31o_2",
+   "x": 62.56,
+   "y": 27.2,
+   "llx": 62.56,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "A3": 12,
+    "A2": 6,
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 42,
+    "A1": 30,
+    "B1": 43
+   }
+  },
+  {
+   "name": "i18",
+   "cell": "sky130_fd_sc_hd__a31o_2",
+   "x": 65.78,
+   "y": 32.64,
+   "llx": 62.56,
+   "lly": 29.92,
+   "orient": "R180",
+   "pins": {
+    "A3": 63,
+    "A2": 27,
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 38,
+    "A1": 31,
+    "B1": 42
+   }
+  },
+  {
+   "name": "i19",
+   "cell": "sky130_fd_sc_hd__a21o_2",
+   "x": 68.54,
+   "y": 32.64,
+   "llx": 65.32,
+   "lly": 32.64,
+   "orient": "M180",
+   "pins": {
+    "X": 69,
+    "VGND": 1,
+    "VPWR": 2,
+    "B1": 7,
+    "A1": 31,
+    "A2": 27
+   }
+  },
+  {
+   "name": "i20",
+   "cell": "sky130_fd_sc_hd__o21bai_2",
+   "x": 69.92,
+   "y": 32.64,
+   "llx": 65.78,
+   "lly": 29.92,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 64,
+    "B1_N": 15,
+    "A2": 14,
+    "A1": 58
+   }
+  },
+  {
+   "name": "i21",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 48.96,
+   "llx": 35.88,
+   "lly": 46.24,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i22",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 70.72,
+   "llx": 87.4,
+   "lly": 68.0,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i23",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 54.4,
+   "llx": 87.4,
+   "lly": 51.68,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i24",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 32.64,
+   "llx": 87.4,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i25",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 65.28,
+   "llx": 87.4,
+   "lly": 62.56,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i26",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 59.84,
+   "llx": 61.64,
+   "lly": 57.12,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i27",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 65.28,
+   "llx": 61.64,
+   "lly": 62.56,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i28",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 32.64,
+   "llx": 61.64,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i29",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 76.16,
+   "llx": 35.88,
+   "lly": 73.44,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i30",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 54.4,
+   "llx": 61.64,
+   "lly": 51.68,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i31",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 16.32,
+   "llx": 35.88,
+   "lly": 13.6,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i32",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 81.6,
+   "llx": 35.88,
+   "lly": 78.88,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i33",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 76.16,
+   "llx": 61.64,
+   "lly": 73.44,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i34",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 70.72,
+   "llx": 61.64,
+   "lly": 68.0,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i35",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 59.84,
+   "llx": 35.88,
+   "lly": 57.12,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i36",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 43.52,
+   "llx": 87.4,
+   "lly": 40.8,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i37",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 54.4,
+   "llx": 35.88,
+   "lly": 51.68,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i38",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 65.28,
+   "llx": 35.88,
+   "lly": 62.56,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i39",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 48.96,
+   "llx": 87.4,
+   "lly": 46.24,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i40",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 87.04,
+   "llx": 35.88,
+   "lly": 84.32,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i41",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 81.6,
+   "llx": 61.64,
+   "lly": 78.88,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i42",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 38.08,
+   "llx": 87.4,
+   "lly": 35.36,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i43",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 38.08,
+   "llx": 61.64,
+   "lly": 35.36,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i44",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 48.96,
+   "llx": 61.64,
+   "lly": 46.24,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i45",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 43.52,
+   "llx": 61.64,
+   "lly": 40.8,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i46",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 87.04,
+   "llx": 87.4,
+   "lly": 84.32,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i47",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 81.6,
+   "llx": 87.4,
+   "lly": 78.88,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i48",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 21.76,
+   "llx": 61.64,
+   "lly": 19.04,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i49",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 27.2,
+   "llx": 61.64,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i50",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 32.64,
+   "llx": 35.88,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i51",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 16.32,
+   "llx": 61.64,
+   "lly": 13.6,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i52",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 21.76,
+   "llx": 87.4,
+   "lly": 19.04,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i53",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 76.16,
+   "llx": 87.4,
+   "lly": 73.44,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i54",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 38.08,
+   "llx": 35.88,
+   "lly": 35.36,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i55",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 87.04,
+   "llx": 61.64,
+   "lly": 84.32,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i56",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 70.72,
+   "llx": 35.88,
+   "lly": 68.0,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i57",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 27.2,
+   "llx": 87.4,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i58",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 43.52,
+   "llx": 35.88,
+   "lly": 40.8,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i59",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 16.32,
+   "llx": 87.4,
+   "lly": 13.6,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i60",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 59.84,
+   "llx": 87.4,
+   "lly": 57.12,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i61",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 27.2,
+   "llx": 35.88,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i62",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 43.52,
+   "llx": 23.0,
+   "lly": 43.52,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i63",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 38.08,
+   "llx": 23.0,
+   "lly": 38.08,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i64",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 65.28,
+   "llx": 48.76,
+   "lly": 65.28,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i65",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 32.64,
+   "llx": 23.0,
+   "lly": 32.64,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i66",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 70.72,
+   "llx": 48.76,
+   "lly": 70.72,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i67",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 54.4,
+   "llx": 48.76,
+   "lly": 54.4,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i68",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 10.88,
+   "llx": 23.0,
+   "lly": 10.88,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i69",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 87.04,
+   "llx": 87.4,
+   "lly": 87.04,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i70",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 87.04,
+   "llx": 74.52,
+   "lly": 87.04,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i71",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 27.2,
+   "llx": 23.0,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i72",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 16.32,
+   "llx": 23.0,
+   "lly": 16.32,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i73",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 81.6,
+   "llx": 74.52,
+   "lly": 81.6,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i74",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 76.16,
+   "llx": 74.52,
+   "lly": 76.16,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i75",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 21.76,
+   "llx": 23.0,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i76",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 70.72,
+   "llx": 74.52,
+   "lly": 70.72,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i77",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 87.04,
+   "llx": 48.76,
+   "lly": 87.04,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i78",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 48.96,
+   "llx": 23.0,
+   "lly": 48.96,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i79",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 81.6,
+   "llx": 48.76,
+   "lly": 81.6,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i80",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 65.28,
+   "llx": 23.0,
+   "lly": 65.28,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i81",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 87.04,
+   "llx": 61.64,
+   "lly": 87.04,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i82",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 10.88,
+   "llx": 35.88,
+   "lly": 10.88,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i83",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 32.64,
+   "llx": 48.76,
+   "lly": 32.64,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i84",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 38.08,
+   "llx": 48.76,
+   "lly": 38.08,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i85",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 54.4,
+   "llx": 23.0,
+   "lly": 54.4,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i86",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 43.52,
+   "llx": 48.76,
+   "lly": 43.52,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i87",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 59.84,
+   "llx": 23.0,
+   "lly": 59.84,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i88",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 21.76,
+   "llx": 48.76,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i89",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 65.28,
+   "llx": 74.52,
+   "lly": 65.28,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i90",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 27.2,
+   "llx": 48.76,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i91",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 76.16,
+   "llx": 48.76,
+   "lly": 76.16,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i92",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 10.88,
+   "llx": 48.76,
+   "lly": 10.88,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i93",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 81.6,
+   "llx": 23.0,
+   "lly": 81.6,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i94",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 59.84,
+   "llx": 48.76,
+   "lly": 59.84,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i95",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 54.4,
+   "llx": 74.52,
+   "lly": 54.4,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i96",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 87.04,
+   "llx": 23.0,
+   "lly": 87.04,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i97",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 16.32,
+   "llx": 48.76,
+   "lly": 16.32,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i98",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 70.72,
+   "llx": 23.0,
+   "lly": 70.72,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i99",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 23.0,
+   "y": 76.16,
+   "llx": 23.0,
+   "lly": 76.16,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i100",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 38.08,
+   "llx": 74.52,
+   "lly": 38.08,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i101",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 87.4,
+   "y": 10.88,
+   "llx": 87.4,
+   "lly": 10.88,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i102",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 16.32,
+   "llx": 74.52,
+   "lly": 16.32,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i103",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 87.04,
+   "llx": 35.88,
+   "lly": 87.04,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i104",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 43.52,
+   "llx": 74.52,
+   "lly": 43.52,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i105",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 32.64,
+   "llx": 74.52,
+   "lly": 32.64,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i106",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 10.88,
+   "llx": 74.52,
+   "lly": 10.88,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i107",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 61.64,
+   "y": 10.88,
+   "llx": 61.64,
+   "lly": 10.88,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i108",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 48.96,
+   "llx": 74.52,
+   "lly": 48.96,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i109",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 27.2,
+   "llx": 74.52,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i110",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 59.84,
+   "llx": 74.52,
+   "lly": 59.84,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i111",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 48.76,
+   "y": 48.96,
+   "llx": 48.76,
+   "lly": 48.96,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i112",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 74.52,
+   "y": 21.76,
+   "llx": 74.52,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i113",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 21.76,
+   "llx": 29.9,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 30,
+    "CLK": 26,
+    "D": 21,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i114",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 34.04,
+   "y": 21.76,
+   "llx": 29.9,
+   "lly": 19.04,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 11,
+    "A1": 10,
+    "S": 9,
+    "A0": 23
+   }
+  },
+  {
+   "name": "i115",
+   "cell": "sky130_fd_sc_hd__tapvpwrvgnd_1",
+   "x": 35.88,
+   "y": 21.76,
+   "llx": 35.88,
+   "lly": 19.04,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i116",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 29.9,
+   "y": 32.64,
+   "llx": 25.76,
+   "lly": 32.64,
+   "orient": "M180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 71,
+    "A1": 49,
+    "S": 9,
+    "A0": 62
+   }
+  },
+  {
+   "name": "i117",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 29.9,
+   "y": 27.2,
+   "llx": 25.76,
+   "lly": 27.2,
+   "orient": "M180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 50,
+    "A1": 53,
+    "S": 9,
+    "A0": 49
+   }
+  },
+  {
+   "name": "i118",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 29.9,
+   "y": 70.72,
+   "llx": 25.76,
+   "lly": 70.72,
+   "orient": "M180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 90,
+    "A1": 74,
+    "S": 9,
+    "A0": 4
+   }
+  },
+  {
+   "name": "i119",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 29.9,
+   "y": 81.6,
+   "llx": 29.9,
+   "lly": 78.88,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 94,
+    "A1": 54,
+    "S": 9,
+    "A0": 67
+   }
+  },
+  {
+   "name": "i120",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 29.9,
+   "y": 59.84,
+   "llx": 29.9,
+   "lly": 57.12,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 79,
+    "A1": 4,
+    "S": 9,
+    "A0": 54
+   }
+  },
+  {
+   "name": "i121",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 36.34,
+   "y": 27.2,
+   "llx": 36.34,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 47,
+    "A1": 30,
+    "S": 9,
+    "A0": 18
+   }
+  },
+  {
+   "name": "i122",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 29.9,
+   "y": 43.52,
+   "llx": 29.9,
+   "lly": 40.8,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 21,
+    "A1": 23,
+    "S": 9,
+    "A0": 30
+   }
+  },
+  {
+   "name": "i123",
+   "cell": "sky130_fd_sc_hd__clkbuf_16",
+   "x": 30.82,
+   "y": 43.52,
+   "llx": 30.82,
+   "lly": 43.52,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "X": 26,
+    "VGND": 1,
+    "A": 75
+   }
+  },
+  {
+   "name": "i124",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 36.34,
+   "y": 38.08,
+   "llx": 36.34,
+   "lly": 35.36,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 36,
+    "A1": 18,
+    "S": 9,
+    "A0": 34
+   }
+  },
+  {
+   "name": "i125",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 26.22,
+   "y": 32.64,
+   "llx": 22.08,
+   "lly": 29.92,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 57,
+    "A1": 62,
+    "S": 9,
+    "A0": 10
+   }
+  },
+  {
+   "name": "i126",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 26.22,
+   "y": 76.16,
+   "llx": 22.08,
+   "lly": 73.44,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 81,
+    "A1": 68,
+    "S": 9,
+    "A0": 60
+   }
+  },
+  {
+   "name": "i127",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 22.08,
+   "y": 32.64,
+   "llx": 17.94,
+   "lly": 29.92,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 61,
+    "A1": 34,
+    "S": 9,
+    "A0": 56
+   }
+  },
+  {
+   "name": "i128",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 26.22,
+   "y": 70.72,
+   "llx": 22.08,
+   "lly": 68.0,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 88,
+    "A1": 13,
+    "S": 9,
+    "A0": 68
+   }
+  },
+  {
+   "name": "i129",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 25.76,
+   "y": 76.16,
+   "llx": 25.76,
+   "lly": 76.16,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 92,
+    "A1": 22,
+    "S": 9,
+    "A0": 6
+   }
+  },
+  {
+   "name": "i130",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 25.76,
+   "y": 65.28,
+   "llx": 25.76,
+   "lly": 65.28,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 85,
+    "A1": 67,
+    "S": 9,
+    "A0": 22
+   }
+  },
+  {
+   "name": "i131",
+   "cell": "sky130_fd_sc_hd__mux2_1",
+   "x": 39.56,
+   "y": 70.72,
+   "llx": 39.56,
+   "lly": 70.72,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 87,
+    "A1": 6,
+    "S": 9,
+    "A0": 13
+   }
+  },
+  {
+   "name": "i132",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 26.22,
+   "y": 70.72,
+   "llx": 26.22,
+   "lly": 68.0,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 22,
+    "CLK": 80,
+    "D": 85,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i133",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 26.22,
+   "y": 32.64,
+   "llx": 26.22,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 10,
+    "CLK": 26,
+    "D": 57,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i134",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 36.34,
+   "y": 32.64,
+   "llx": 36.34,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 23,
+    "CLK": 26,
+    "D": 11,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i135",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 36.34,
+   "y": 70.72,
+   "llx": 36.34,
+   "lly": 68.0,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 13,
+    "CLK": 80,
+    "D": 87,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i136",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 36.34,
+   "y": 76.16,
+   "llx": 36.34,
+   "lly": 73.44,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 68,
+    "CLK": 80,
+    "D": 88,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i137",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 26.22,
+   "y": 76.16,
+   "llx": 26.22,
+   "lly": 73.44,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 6,
+    "CLK": 80,
+    "D": 92,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i138",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 26.22,
+   "y": 38.08,
+   "llx": 26.22,
+   "lly": 35.36,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 56,
+    "CLK": 26,
+    "D": 61,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i139",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 35.88,
+   "y": 27.2,
+   "llx": 26.22,
+   "lly": 24.48,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 34,
+    "CLK": 26,
+    "D": 36,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i140",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 70.72,
+   "llx": 29.9,
+   "lly": 70.72,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 4,
+    "CLK": 80,
+    "D": 90,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i141",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 38.08,
+   "llx": 29.9,
+   "lly": 38.08,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 18,
+    "CLK": 26,
+    "D": 47,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i142",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 59.84,
+   "llx": 29.9,
+   "lly": 59.84,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 60,
+    "CLK": 80,
+    "D": 81,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i143",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 27.2,
+   "llx": 29.9,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 49,
+    "CLK": 26,
+    "D": 50,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i144",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 65.28,
+   "llx": 29.9,
+   "lly": 65.28,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 54,
+    "CLK": 80,
+    "D": 79,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i145",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 76.16,
+   "llx": 29.9,
+   "lly": 76.16,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 67,
+    "CLK": 80,
+    "D": 94,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i146",
+   "cell": "sky130_fd_sc_hd__dfrtp_2",
+   "x": 29.9,
+   "y": 32.64,
+   "llx": 29.9,
+   "lly": 32.64,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "RESET_B": 41,
+    "Q": 62,
+    "CLK": 26,
+    "D": 71,
+    "VPWR": 2
+   }
+  },
+  {
+   "name": "i147",
+   "cell": "sky130_fd_sc_hd__and2_2",
+   "x": 77.74,
+   "y": 32.64,
+   "llx": 74.98,
+   "lly": 32.64,
+   "orient": "M180",
+   "pins": {
+    "A": 23,
+    "VGND": 1,
+    "X": 66,
+    "VPWR": 2,
+    "B": 22
+   }
+  },
+  {
+   "name": "i148",
+   "cell": "sky130_fd_sc_hd__and2_2",
+   "x": 67.16,
+   "y": 21.76,
+   "llx": 67.16,
+   "lly": 19.04,
+   "orient": "M0",
+   "pins": {
+    "A": 56,
+    "VGND": 1,
+    "X": 15,
+    "VPWR": 2,
+    "B": 60
+   }
+  },
+  {
+   "name": "i149",
+   "cell": "sky130_fd_sc_hd__xnor2_2",
+   "x": 75.9,
+   "y": 21.76,
+   "llx": 69.92,
+   "lly": 19.04,
+   "orient": "R180",
+   "pins": {
+    "Y": 16,
+    "VPWR": 2,
+    "VGND": 1,
+    "B": 14,
+    "A": 17
+   }
+  },
+  {
+   "name": "i150",
+   "cell": "sky130_fd_sc_hd__and2_2",
+   "x": 69.92,
+   "y": 38.08,
+   "llx": 67.16,
+   "lly": 35.36,
+   "orient": "R180",
+   "pins": {
+    "A": 39,
+    "VGND": 1,
+    "X": 73,
+    "VPWR": 2,
+    "B": 3
+   }
+  },
+  {
+   "name": "i151",
+   "cell": "sky130_fd_sc_hd__a21bo_2",
+   "x": 73.6,
+   "y": 38.08,
+   "llx": 69.92,
+   "lly": 35.36,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "X": 52,
+    "B1_N": 29,
+    "VGND": 1,
+    "A1": 20,
+    "A2": 19
+   }
+  },
+  {
+   "name": "i152",
+   "cell": "sky130_fd_sc_hd__and2_2",
+   "x": 74.98,
+   "y": 21.76,
+   "llx": 74.98,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "A": 28,
+    "VGND": 1,
+    "X": 19,
+    "VPWR": 2,
+    "B": 29
+   }
+  },
+  {
+   "name": "i153",
+   "cell": "sky130_fd_sc_hd__nand2_2",
+   "x": 77.74,
+   "y": 21.76,
+   "llx": 77.74,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 37,
+    "B": 68,
+    "A": 34
+   }
+  },
+  {
+   "name": "i154",
+   "cell": "sky130_fd_sc_hd__and2_2",
+   "x": 69.92,
+   "y": 38.08,
+   "llx": 69.92,
+   "lly": 38.08,
+   "orient": "R0",
+   "pins": {
+    "A": 18,
+    "VGND": 1,
+    "X": 43,
+    "VPWR": 2,
+    "B": 13
+   }
+  },
+  {
+   "name": "i155",
+   "cell": "sky130_fd_sc_hd__and2_2",
+   "x": 59.8,
+   "y": 27.2,
+   "llx": 59.8,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "A": 62,
+    "VGND": 1,
+    "X": 45,
+    "VPWR": 2,
+    "B": 54
+   }
+  },
+  {
+   "name": "i156",
+   "cell": "sky130_fd_sc_hd__or2_2",
+   "x": 72.22,
+   "y": 16.32,
+   "llx": 69.92,
+   "lly": 13.6,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 3,
+    "A": 49,
+    "B": 4
+   }
+  },
+  {
+   "name": "i157",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 69.92,
+   "y": 16.32,
+   "llx": 67.62,
+   "lly": 16.32,
+   "orient": "M180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 31,
+    "A": 7,
+    "B": 5
+   }
+  },
+  {
+   "name": "i158",
+   "cell": "sky130_fd_sc_hd__and2_2",
+   "x": 69.92,
+   "y": 16.32,
+   "llx": 69.92,
+   "lly": 16.32,
+   "orient": "R0",
+   "pins": {
+    "A": 30,
+    "VGND": 1,
+    "X": 7,
+    "VPWR": 2,
+    "B": 6
+   }
+  },
+  {
+   "name": "i159",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 65.32,
+   "y": 32.64,
+   "llx": 63.02,
+   "lly": 32.64,
+   "orient": "M180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 24,
+    "A": 59,
+    "B": 66
+   }
+  },
+  {
+   "name": "i160",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 69.92,
+   "y": 38.08,
+   "llx": 67.62,
+   "lly": 38.08,
+   "orient": "M180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 72,
+    "A": 18,
+    "B": 13
+   }
+  },
+  {
+   "name": "i161",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 59.34,
+   "y": 32.64,
+   "llx": 59.34,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 58,
+    "A": 56,
+    "B": 60
+   }
+  },
+  {
+   "name": "i162",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 79.12,
+   "y": 32.64,
+   "llx": 79.12,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 59,
+    "A": 23,
+    "B": 22
+   }
+  },
+  {
+   "name": "i163",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 67.16,
+   "y": 38.08,
+   "llx": 64.86,
+   "lly": 35.36,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 63,
+    "A": 72,
+    "B": 43
+   }
+  },
+  {
+   "name": "i164",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 57.5,
+   "y": 27.2,
+   "llx": 57.5,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 5,
+    "A": 30,
+    "B": 6
+   }
+  },
+  {
+   "name": "i165",
+   "cell": "sky130_fd_sc_hd__nor2_2",
+   "x": 83.26,
+   "y": 27.2,
+   "llx": 83.26,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "Y": 17,
+    "A": 15,
+    "B": 58
+   }
+  },
+  {
+   "name": "i166",
+   "cell": "sky130_fd_sc_hd__or2_2",
+   "x": 73.6,
+   "y": 38.08,
+   "llx": 73.6,
+   "lly": 35.36,
+   "orient": "M0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 28,
+    "A": 10,
+    "B": 67
+   }
+  },
+  {
+   "name": "i167",
+   "cell": "sky130_fd_sc_hd__or2_2",
+   "x": 67.16,
+   "y": 21.76,
+   "llx": 64.86,
+   "lly": 19.04,
+   "orient": "R180",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 12,
+    "A": 18,
+    "B": 13
+   }
+  },
+  {
+   "name": "i168",
+   "cell": "sky130_fd_sc_hd__or2_2",
+   "x": 77.74,
+   "y": 32.64,
+   "llx": 77.74,
+   "lly": 32.64,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 44,
+    "A": 34,
+    "B": 68
+   }
+  },
+  {
+   "name": "i169",
+   "cell": "sky130_fd_sc_hd__or2_2",
+   "x": 63.02,
+   "y": 21.76,
+   "llx": 63.02,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 32,
+    "A": 23,
+    "B": 22
+   }
+  },
+  {
+   "name": "i170",
+   "cell": "sky130_fd_sc_hd__a31o_2",
+   "x": 65.32,
+   "y": 21.76,
+   "llx": 65.32,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "A3": 24,
+    "A2": 19,
+    "VGND": 1,
+    "VPWR": 2,
+    "X": 27,
+    "A1": 20,
+    "B1": 25
+   }
+  },
+  {
+   "name": "i171",
+   "cell": "sky130_fd_sc_hd__xor2_2",
+   "x": 68.54,
+   "y": 21.76,
+   "llx": 68.54,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VGND": 1,
+    "A": 31,
+    "X": 33,
+    "VPWR": 2,
+    "B": 27
+   }
+  },
+  {
+   "name": "i172",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 48.96,
+   "llx": 88.32,
+   "lly": 48.96,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i173",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 27.2,
+   "llx": 88.32,
+   "lly": 27.2,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i174",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 32.64,
+   "llx": 88.32,
+   "lly": 32.64,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i175",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 43.52,
+   "llx": 88.32,
+   "lly": 43.52,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i176",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 10.88,
+   "llx": 88.32,
+   "lly": 10.88,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i177",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 38.08,
+   "llx": 88.32,
+   "lly": 38.08,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i178",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 65.28,
+   "llx": 88.32,
+   "lly": 65.28,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i179",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 54.4,
+   "llx": 88.32,
+   "lly": 54.4,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i180",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 59.84,
+   "llx": 88.32,
+   "lly": 59.84,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i181",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 87.04,
+   "llx": 88.32,
+   "lly": 87.04,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i182",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 70.72,
+   "llx": 88.32,
+   "lly": 70.72,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i183",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 76.16,
+   "llx": 88.32,
+   "lly": 76.16,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i184",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 81.6,
+   "llx": 88.32,
+   "lly": 81.6,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i185",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 21.76,
+   "llx": 88.32,
+   "lly": 21.76,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i186",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 16.32,
+   "llx": 88.32,
+   "lly": 16.32,
+   "orient": "M180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i187",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 70.72,
+   "llx": 10.12,
+   "lly": 68.0,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i188",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 43.52,
+   "llx": 10.12,
+   "lly": 40.8,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i189",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 27.2,
+   "llx": 10.12,
+   "lly": 24.48,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i190",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 87.04,
+   "llx": 10.12,
+   "lly": 84.32,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i191",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 16.32,
+   "llx": 10.12,
+   "lly": 13.6,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i192",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 16.32,
+   "llx": 10.12,
+   "lly": 16.32,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i193",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 21.76,
+   "llx": 10.12,
+   "lly": 19.04,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i194",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 76.16,
+   "llx": 10.12,
+   "lly": 73.44,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i195",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 48.96,
+   "llx": 10.12,
+   "lly": 46.24,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i196",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 81.6,
+   "llx": 10.12,
+   "lly": 78.88,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i197",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 32.64,
+   "llx": 10.12,
+   "lly": 29.92,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i198",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 54.4,
+   "llx": 10.12,
+   "lly": 51.68,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i199",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 59.84,
+   "llx": 10.12,
+   "lly": 57.12,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i200",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 65.28,
+   "llx": 10.12,
+   "lly": 62.56,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i201",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 38.08,
+   "llx": 10.12,
+   "lly": 35.36,
+   "orient": "M0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i202",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 70.72,
+   "llx": 88.32,
+   "lly": 68.0,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i203",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 65.28,
+   "llx": 88.32,
+   "lly": 62.56,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i204",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 87.04,
+   "llx": 88.32,
+   "lly": 84.32,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i205",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 54.4,
+   "llx": 88.32,
+   "lly": 51.68,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i206",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 76.16,
+   "llx": 88.32,
+   "lly": 73.44,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i207",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 81.6,
+   "llx": 88.32,
+   "lly": 78.88,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i208",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 59.84,
+   "llx": 88.32,
+   "lly": 57.12,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i209",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 32.64,
+   "llx": 88.32,
+   "lly": 29.92,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i210",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 43.52,
+   "llx": 88.32,
+   "lly": 40.8,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i211",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 48.96,
+   "llx": 88.32,
+   "lly": 46.24,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i212",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 38.08,
+   "llx": 88.32,
+   "lly": 35.36,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i213",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 21.76,
+   "llx": 88.32,
+   "lly": 19.04,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i214",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 27.2,
+   "llx": 88.32,
+   "lly": 24.48,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i215",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 89.7,
+   "y": 16.32,
+   "llx": 88.32,
+   "lly": 13.6,
+   "orient": "R180",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i216",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 54.4,
+   "llx": 10.12,
+   "lly": 54.4,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i217",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 48.96,
+   "llx": 10.12,
+   "lly": 48.96,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i218",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 32.64,
+   "llx": 10.12,
+   "lly": 32.64,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i219",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 38.08,
+   "llx": 10.12,
+   "lly": 38.08,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i220",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 76.16,
+   "llx": 10.12,
+   "lly": 76.16,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i221",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 81.6,
+   "llx": 10.12,
+   "lly": 81.6,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i222",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 43.52,
+   "llx": 10.12,
+   "lly": 43.52,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i223",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 27.2,
+   "llx": 10.12,
+   "lly": 27.2,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i224",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 87.04,
+   "llx": 10.12,
+   "lly": 87.04,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i225",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 10.88,
+   "llx": 10.12,
+   "lly": 10.88,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i226",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 70.72,
+   "llx": 10.12,
+   "lly": 70.72,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i227",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 21.76,
+   "llx": 10.12,
+   "lly": 21.76,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i228",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 59.84,
+   "llx": 10.12,
+   "lly": 59.84,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  },
+  {
+   "name": "i229",
+   "cell": "sky130_fd_sc_hd__decap_3",
+   "x": 10.12,
+   "y": 65.28,
+   "llx": 10.12,
+   "lly": 65.28,
+   "orient": "R0",
+   "pins": {
+    "VPWR": 2,
+    "VGND": 1
+   }
+  }
+ ],
+ "nets": {
+  "64": null,
+  "77": null,
+  "2": "VPWR",
+  "1": "VGND",
+  "55": null,
+  "16": null,
+  "76": null,
+  "51": null,
+  "33": null,
+  "70": null,
+  "65": null,
+  "8": "S",
+  "48": null,
+  "73": null,
+  "80": null,
+  "75": null,
+  "78": "clk",
+  "29": null,
+  "67": null,
+  "10": null,
+  "35": null,
+  "44": null,
+  "37": null,
+  "39": null,
+  "4": null,
+  "49": null,
+  "40": null,
+  "38": null,
+  "14": null,
+  "20": null,
+  "19": null,
+  "24": null,
+  "52": null,
+  "62": null,
+  "54": null,
+  "63": null,
+  "69": null,
+  "32": null,
+  "25": null,
+  "66": null,
+  "45": null,
+  "12": null,
+  "6": null,
+  "42": null,
+  "30": null,
+  "43": null,
+  "27": null,
+  "31": null,
+  "7": null,
+  "15": null,
+  "58": null,
+  "41": "rst_n",
+  "26": null,
+  "21": null,
+  "11": null,
+  "9": "en",
+  "23": null,
+  "71": null,
+  "50": null,
+  "53": "B",
+  "90": null,
+  "74": "A",
+  "94": null,
+  "79": null,
+  "47": null,
+  "18": null,
+  "36": null,
+  "34": null,
+  "57": null,
+  "81": null,
+  "68": null,
+  "60": null,
+  "61": null,
+  "56": null,
+  "88": null,
+  "13": null,
+  "92": null,
+  "22": null,
+  "85": null,
+  "87": null,
+  "17": null,
+  "3": null,
+  "28": null,
+  "5": null,
+  "59": null,
+  "72": null
+ },
+ "ports": {
+  "VGND": 1,
+  "VPWR": 2,
+  "S": 8,
+  "en": 9,
+  "rst_n": 41,
+  "B": 53,
+  "A": 74,
+  "clk": 78
+ }
+}

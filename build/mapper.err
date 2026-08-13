@@ -1,0 +1,3 @@
+built library DB: 437 cells -> build/libdb.pkl
+
+summary: 69 identified (name==geometry), 0 renamed/ambiguous, 0 novel, 2 non-logic (of 71 cell defs)

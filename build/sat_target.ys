@@ -1,0 +1,7 @@
+read_verilog -sv build/cells_yosys.v
+read_verilog -sv build/puzzle_extracted.v
+read_verilog -sv build/formal_top.v
+prep -top top -flatten
+async2sync
+dffunmap
+sat -set-init-undef -set success 1 -show success -show O

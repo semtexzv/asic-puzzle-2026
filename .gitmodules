@@ -1,0 +1,4 @@
+[submodule "lib/sky130_fd_sc_hd"]
+	path = lib/sky130_fd_sc_hd
+	url = https://github.com/google/skywater-pdk-libs-sky130_fd_sc_hd
+

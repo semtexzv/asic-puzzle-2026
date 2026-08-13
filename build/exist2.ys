@@ -1,0 +1,8 @@
+read_verilog -sv build/cells_yosys.v
+read_verilog -sv build/puzzle_fixed.v
+read_verilog -sv build/formal_top.v
+prep -top top -flatten
+async2sync
+dffunmap
+delete t:$dff t:$dffe t:$adff t:$sdff
+sat -set success 1 -show success
